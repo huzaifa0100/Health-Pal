@@ -1,2 +1,2 @@
 # Health-Pal
- A Health Site
+A Health Site created using Html, CSS and Bootstrap
