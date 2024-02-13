@@ -1,0 +1,438 @@
+@font-face {
+    font-family: Inter;
+    src: url(../Font/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter_reg;
+    src: url(../Font/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter_lg;
+    src: url(../Font/Inter-Light.ttf);
+}
+
+@media (max-width: 575.98px) {
+
+    /* Apply top margin to elements with the class 'small' on screens smaller than 576px */
+    .small {
+        margin-top: 1.5rem;
+        /* Adjust the margin-top value as needed */
+    }
+
+    .center-horizontal {
+        justify-content: center;
+        display: flex;
+    }
+
+}
+
+.nav-link.nav_cl:hover {
+    color: #81b09f !important;
+}
+
+body {
+    background-color: #fdfdfd;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+
+.footer_bg .container,
+.footer_bg .row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+.nav_cl {
+    color: white !important;
+}
+
+.margin {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.header_bg {
+    background: url(../Images/Vector\ 1.png) left top no-repeat, url(../Images/Vector\ 4.png) right bottom no-repeat;
+    background-size: 100% 100%;
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../Images/Vector\ 4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+}
+
+.header_bg1 {
+    background-image: url(../Images/Vector\ 4.png);
+    margin-right: 0rem;
+    background-repeat: no-repeat;
+
+}
+
+.doctor {
+    color: #5e8e84;
+    font-family: inter;
+}
+
+.meet {
+    color: white;
+    font-family: inter;
+}
+
+.info {
+    color: white;
+    font-family: inter;
+}
+
+.l_h {
+    line-height: 2rem;
+}
+
+.hd {
+    font-family: inter;
+    color: #1C2a3a;
+}
+
+.features {
+    font-family: inter;
+}
+
+.features_info {
+    font-family: inter_lg;
+    color: grey;
+}
+
+.info1 {
+    font-family: inter_reg;
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.features_bg {
+    background-color: #fbfbfb;
+    /* box-shadow: 0.2rem 0.2rem 0.5rem grey; */
+    border: 0.1rem solid #000;
+    border-radius: 1rem;
+    padding: 1rem;
+    /* Add padding for spacing inside the box */
+    max-width: 20rem;
+    /* Set a specific max-width */
+    margin: 0 auto;
+    /* Center the div horizontally */
+}
+
+.features_margin_r {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    /* Add margin-bottom for vertical spacing */
+}
+
+@media (max-width: 991.98px) {
+    .features_margin_r {
+        margin-right: auto;
+        /* Center the first two columns on medium screens */
+    }
+}
+
+.bg_map {
+    --bg-image: url(../Images/OJO4YQ0.jpg);
+    --bg-image-opacity: 0.20;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative !important;
+    isolation: isolate;
+    height: 130vh; /* Set height to fill the entire viewport height */
+}
+
+.bg_map::after {
+    content: '';
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute !important;
+    opacity: var(--bg-image-opacity);
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    isolation: isolate;
+    margin-right: -5vw;
+    margin-left: -10vw;
+}
+
+
+
+
+.width {
+    width: 13rem;
+    height: auto;
+}
+
+.bg_2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg_2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Set width to cover the entire viewport width */
+    height: 50%; /* Set height to 50% */
+    background-color: #e5efeb;
+    z-index: -1;
+    transform: translateX(-50%); /* Center the pseudo-element horizontally */
+}
+
+
+
+
+/* Add this if you want to ensure the border-radius is applied to the entire row */
+.row.bg_2 {
+    overflow: hidden;
+}
+
+
+
+.height {
+    height: 10rem;
+    line-height: 0%;
+}
+
+.bg_1 {
+    --bg-image: url(../Images/Backgorund.jpg);
+    --bg-image-opacity: 0.50;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative !important;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; /* Adjusted height */
+    margin-top: 2rem; /* Adjust the top margin as needed */
+}
+
+.bg_1::after {
+    content: '';
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute !important;
+    opacity: var(--bg-image-opacity);
+    z-index: -1;
+    inset: 0;
+    isolation: isolate;
+}
+
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+    .bg_1::after,
+    .bg_1 {
+        height: 50vh; /* Adjust the overall height as needed for tablet screens */
+        top: 10vh; /* Adjust the top height as needed for tablet screens */
+        bottom: 10vh; /* Adjust the bottom height as needed for tablet screens */
+    }
+}
+
+
+.bg_info {
+    font-family: inter_reg;
+    color: #1C2a3a;
+    font-size: 1.5rem;
+}
+
+.bg_info_mg {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+
+.bg_3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg_3::before {
+    content: "";
+    position: absolute;
+    top: 60%; /* Adjust the top value to move the pseudo-element lower */
+    left: 0;
+    width: 100%;
+    height: 60%; /* Adjust the height of the pseudo-element */
+    background-color: #e5efeb;
+    border-radius: 1rem 1rem 0 0; /* Apply border-radius to the top corners */
+    z-index: -1; /* Move the pseudo-element to the background */
+}
+
+.bg_3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem; /* Adjust the height to control the roundness at the bottom */
+    background-color: #e5efeb;
+    border-radius: 0 0 1rem 1rem; /* Apply border-radius to the bottom corners */
+    z-index: -1; /* Move the pseudo-element to the background */
+}
+
+
+
+
+
+.info_Cl {
+    font-family: inter_reg;
+    color: #d9d9d9;
+}
+
+/* Common styles for both desktop and tablet */
+.bg_info1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e5efeb;
+    z-index: -1;
+}
+
+/* Common styles for both desktop and tablet */
+.bg_info1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e5efeb;
+    z-index: -1;
+}
+
+/* Common styles for both desktop and tablet */
+.bg_info1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e5efeb;
+    z-index: -1;
+}
+
+/* Common styles for both desktop and tablet */
+.bg_info1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e5efeb;
+    z-index: -1;
+}
+
+.bg_info1 img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Tablet-specific styles */
+@media (max-width: 991px) {
+    .bg_info1 img {
+        width: 50%; /* Adjust the width for tablet view */
+        position: static;
+        transform: none;
+    }
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+
+
+
+
+.mt_img {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.cl_info {
+    color: #5e8e84;
+    font-family: inter_reg;
+}
+
+.footer_bg {
+    background-image: url(../Images/Vector\ 5.png), url(../Images/Vector\ 7.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 100% 100%;
+}
+
+.hd1 {
+    font-family: inter;
+    color: white;
+}
+
+.links {
+    display: inline;
+}
+
+/* Default style for links_pad */
+.links_pad {
+    padding: 1.5rem;
+}
+
+/* Media query for tablets (max-width: 991px) */
+@media (max-width: 991px) {
+    .links_pad {
+        padding: 1rem; /* Adjust the padding for tablet view */
+    }
+}
+
+
+.links_wd {
+    width: 2rem;
+    /* height: 1rem; */
+}
+
+.form_mg {
+    margin-top: 10rem;
+}
+
+hr {
+    color: white;
+}
+
+.footer_year {
+    font-family: inter_lg;
+    color: white;
+}
+
+.text_align {
+    text-align: left !important;
+}
+
+.ft_mt{
+    margin-top: 10rem !important;
+}
+
+.mg_1122{
+    margin-top: 35vh;
+}
